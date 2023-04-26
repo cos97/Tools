@@ -1,0 +1,131 @@
+ Pregunta 1
+
+FUNCTION modificarAlumno (a NUMBER) RETURN alumno
+¿Qué se está realizando a través del código anterior?  
+. Declarar una función que devuelve un objeto alumno
+  Declarar un procedimiento al que se le pasa un objeto por parámetro
+  Declarar un objeto de tipo alumno
+  Ninguna de las anteriores
+ 
+
+venta1 := NEW venta ('Ana García',55,1000);
+Mediante la sentencia anterior
+  Se está declarando un objeto
+. Se está inicializando un objeto de tipo venta
+  Se está modificando un objeto de tipo venta
+  Ninguna es correcta
+ 
+Deseamos crear una variable para almacenar un tipo de objeto Venta ¿cómo lo haríamos?
+  Venta venta1;
+. Venta1 venta;
+  Venta1 := venta;
+  Venta := venta1;
+ 
+Deseamos asignar un valor 30 al atributo importe del objeto venta1
+  30 = venta1;
+. venta1.importe := 30;
+  importe.venta1 := 30;
+  Ninguna es correcta
+ 
+Si deseamos acceder al método obtenerImporte del objeto venta1 utilizaremos
+. venta1.obtenerImporte();
+  obtenerImporte().venta1;
+  venta1().obtenerImporte;
+  obtenerImporte.venta1();
+ 
+Si deseamos que un tipo de objeto pueda ser heredado por otros debemos incluir el siguiente comando en su declaración
+  FINAL
+. NOT FINAL
+  UNDER
+  MAP
+ 
+Los métodos STATIC
+. Se invocan sobre el tipo de objeto
+  Se invocan sobre instancias de un objeto
+  Se usan para cambiar o leer el valor de los atributos
+  No se suelen utilizar
+ 
+La palabra UNDER se utiliza para
+  Indicar que un tipo de objeto no puede heredar de otros
+  Indicar que un tipo de objeto no puede ser heredado
+  Indicar que un tipo de objeto puede ser heredado
+. Ninguna de las anteriores
+ 
+En un método ORDER, ¿de qué manera se hace referencia al parámetro del objeto que no se pasa por parámetro?
+  Con un nuevo método creado para tal fin
+  Con el comando MAP
+  Con el comando ORDER
+. Con el comando SELF
+ 
+Si utilizamos el método ORDER para comparar dos tipos de objeto iguales, se devolverá el valor
+  Negativo
+  Positivo
+  Nulo
+. Cero
+
+
+
+ Pregunta 1
+Los tipos de datos colección VARRAY
+. Están ordenados mediante un índice
+  No tienen un orden determinado
+  Son tablas anidadas
+  Son elementos de distintos tipos
+ 
+Para recorrer internamente un VARRAY
+  Se utilizan sentencias condicionales
+  No es posible llevarlo a cabo
+  Se utilizan accesos directos a cada dato
+. Ninguna es correcta
+ 
+TYPE nombre_tipo IS TABLE OF tipo_element INDEX BY tipo_indice;
+A través de la sentencia anterior se está:
+  Creando un objeto
+  Creando una tabla
+. Declarando una NESTED TABLE
+  Ninguna es correcta
+ 
+CREATE TABLE t_profes OF profesor;
+Mediante la anterior sentencia se está:
+  Creando una tabla de elementos t_profes
+. Creando una tabla t_profes formada por objetos profesor
+  Creando una tabla con columnas VARCHAR
+  Ninguna es correcta
+ 
+Un ejemplo de creación de tabla con columnas de los atributos de un objeto
+  CREATE TABLE profe1 OF (columna profesor);
+. CREATE TABLE profe1 OF profesor;
+  CREATE TABLE profe2 (c1 profesor);
+  Ninguna es correcta
+ 
+Para insertar objetos en una tabla se utiliza el comando
+  UPDATE
+  SELECT
+  DROP
+. Ninguna de las anteriores
+ 
+El comando UPDATE
+. Se utiliza habitualmente acompañado de WHERE
+  No se puede usar con objetos
+  Se usa siempre con SELECT
+  Se usa siempre con INSERT
+ 
+UPDATE profe2 p SET p.c1.nombre = 'Maria' WHERE p.c1.id_profe = '1234';
+Mediante el código anterior:
+  Se inserta un objeto tipo profe2 en una tabla
+. Se modifica el valor del objeto cuyo id sea 1234.
+  Se modifica el valor del objeto con nombre Maria.
+  Se actualizan todos los objetos cuyo nombre es María.
+ 
+A través de la cláusula DELETE
+. Se permite eliminar objetos de una tabla
+  Se permite modificar el valor de los atributos de un objeto
+  Se permite eliminar atributos de un objeto
+  Ninguna de las anteriores
+ 
+Uno de los usos de la cláusula VALUE es
+  Modificar el valor de un atributo de un objeto
+  Mostrar el valor de un objeto
+. Comparar objetos entre sí
+  Ninguna de las anteriores
+
